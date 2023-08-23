@@ -19,8 +19,9 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
+  font-family:'Source Code Pro', monospace;
+  font-weight: 400;
+  color: #292727;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -43,7 +44,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit * .5;
+  margin-bottom: $spacing-unit * .5; 
 }
 
 hr {
@@ -102,8 +103,17 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   font-weight: $base-font-weight;
+  font-family:'Oswald', sans-serif;
+  letter-spacing: 0.5px;
+  color: #00a19b;
+}
+h3 {
+  color:#292727;
+  font-weight: $base-font-weight;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.5px;
 }
 
 
@@ -112,15 +122,16 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $link-base-color;
+  color: #00a19b;
   text-decoration: none;
+  letter-spacing: 0.5px;
 
   &:visited {
-    color: $link-visited-color;
+    color: #00a19b;
   }
 
   &:hover {
-    color: $link-hover-color;
+    color: #292727;
     text-decoration: underline;
   }
 
@@ -138,7 +149,7 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $brand-color;
+  color: #00a19b;
   border-left: 4px solid $border-color-01;
   padding-left: $spacing-unit * .5;
   @include relative-font-size(1.125);
@@ -160,11 +171,11 @@ blockquote {
  */
 pre,
 code {
-  font-family: $code-font-family;
+  font-family: 'Roboto Mono', monospace;
   font-size: 0.9375em;
-  border: 1px solid $border-color-01;
+  border: 1px solid #b8b8b8;
   border-radius: 3px;
-  background-color: $code-background-color;
+  background-color:#F1F1F1;
 }
 
 code {
@@ -183,12 +194,12 @@ pre {
 }
 
 .highlight {
-  border-radius: 3px;
-  background: $code-background-color;
+  border-radius: 5px;
+  background: #F1F1F1;
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {
-    background: $code-background-color;
+    background: #F1F1F1;
   }
 }
 
@@ -230,7 +241,7 @@ pre {
  */
 
 .orange {
-  color: #f66a0a;
+  color: #00a19b;
 }
 
 .grey {
@@ -251,7 +262,7 @@ pre {
  */
 table {
   margin-bottom: $spacing-unit;
-  width: 100%;
+  width: 95%;
   text-align: $table-text-align;
   color: $table-text-color;
   border-collapse: collapse;
