@@ -128,7 +128,7 @@ wagebyteam.epl.plot <- ggplot(data = wagebyteam, aes( y = avg_salary, x = Team, 
     )
 ```
 
-![epl_chart](\assets\img\wagebyteam_epl_plot.png)
+![epl_chart](\img\wagebyteam_epl_plot.png)
 
 ### 6. Creating an interactive and searchable database of player wages using the reactable package
 
@@ -201,4 +201,4 @@ wage_search_db <- reactable(wage_search,
           minRows = 10)
 
 ```
-<iframe src="\assets\img\wage.search.db.html" height='600px' width='100%'></iframe>
+<iframe src="\img\wage.search.db.html" height='600px' width='100%'></iframe>
