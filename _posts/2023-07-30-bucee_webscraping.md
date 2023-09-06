@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cateloging every Buc'ees Location"
+title: "Cataloging every Buc'ees Location"
 subtitle: "Using Python to webscrape and organize a list of all 46 Buc'ees locations"
 ---
 ### Loading in the required packages
